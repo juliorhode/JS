@@ -51,3 +51,74 @@ bash
 
 node --version
 npm --version
+
+agregamos todos los archivos
+git add .
+
+preparamos los archivos y agregamos un comentario
+git commit -m "Dia 1: Primer codigo con variables"
+
+seleccionamos la rama
+git branch -M main
+
+indicamos el servidor remoto
+git remote add origin git@github.com:juliorhode/JS.git
+
+los subimos
+git push -u origin main
+
+ERROR:
+The authenticity of host 'github.com (140.82.114.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: No se pudo leer del repositorio remoto.
+
+Ese erro es porque usamos SSH si una clave SSH configurada o registrada en github.
+
+Para verificarlo, ejecutamos lo siguiente:
+git remote -v
+
+Probablemente verás algo como (Esto confirma que estás usando SSH.):  
+
+origin  git@github.com:juliorhode/JS.git (fetch)
+origin  git@github.com:juliorhode/JS.git (push)
+
+Vamos a cambiarlo a HTTPS:
+git remote set-url origin https://github.com/juliorhode/JS.git
+git remote -v
+
+ahora estamos usando https
+origin  https://github.com/juliorhode/JS.git (fetch)
+origin  https://github.com/juliorhode/JS.git (push)
+
+
+Configurar SSH
+
+Genera una clave SSH:  
+ssh-keygen -t ed25519 -C "tuemail@example.com"
+
+Presiona Enter para aceptar la ubicación predeterminada (/home/tuusuario/.ssh/id_ed25519).  
+Opcional: Agrega una contraseña para mayor seguridad o déjalo en blanco.
+
+Añade la clave a tu sistema:  
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+Copia la clave pública:  
+cat ~/.ssh/id_ed25519.pub
+Copia el texto que aparece (comienza con ssh-ed25519).  
+
+Añade la clave a GitHub:  
+GitHub → Settings → SSH and GPG keys → New SSH key.  
+
+Pega la clave, dale un nombre (ej. "Linux Mint"), y guarda.
+
+Cambia el remoto a SSH:  
+git remote set-url origin git@github.com:TuUsuario/mini-tienda.git
+git push -u origin main
+
+
+
