@@ -1,0 +1,53 @@
+Instalar Visual Studio Code (VS Code)  
+
+    Abre la terminal (puedes usar Ctrl + Alt + T en Linux Mint).  
+    Actualiza los paquetes:  
+    bash
+
+sudo apt update
+
+Instala VS Code:  
+
+sudo apt install code
+
+(Linux Mint usa el paquete code desde los repositorios de Ubuntu).  
+Verifica que se instaló:  
+
+code --version
+
+Si ves un número de versión, está listo. Abre VS Code con:  
+bash
+
+    code
+
+Instalar Git  
+
+    En la terminal, instala Git:  
+    bash
+
+sudo apt install git
+
+Verifica la instalación:  
+
+    git --version
+
+    Deberías ver algo como git version 2.34.1 (la versión puede variar).
+
+Configurar Git con tu identidad  
+
+    Configura tu nombre y correo (usa los que asociarás a GitHub):  
+
+    git config --global user.name "Julio Rhode"
+    git config --global user.email "juliorhode@gmail.com"
+
+Instalar Node.js (para ejecutar JavaScript)  
+
+    Instala Node.js y npm (el gestor de paquetes):  
+
+sudo apt install nodejs npm
+
+Verifica las versiones:  
+bash
+
+node --version
+npm --version
