@@ -13,7 +13,7 @@ Git y GitHub – Configuración y uso básico
 Estructuras de control y funciones
 [x] Condicionales (if, else, switch)
 [x] Bucles (for, while)
-[ ] Funciones: Declaración clásica, arrow functions, scope
+[x] Funciones: Declaración clásica, arrow functions, scope
 Arrays y objetos
 [x] Métodos: .map(), .filter(), .reduce()
 [x] Spread operator, destructuring

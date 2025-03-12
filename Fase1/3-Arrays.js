@@ -53,7 +53,7 @@ console.log(colorEmpiezaConR);
 
 // Array.prototype.reduce(): Este método devuelve un valor que es el resultado de aplicar una función a cada elemento del arreglo.
 console.log("Array.prototype.reduce()");
-const cantidadColores = colores.reduce((contador, color) => contador + 1, 0) 
+const cantidadColores = colores.reduce((contador, color) => contador + 1, 0)
 console.log(cantidadColores);
 
 // Array.prototype.some(): Este método devuelve un booleano que indica si al menos un elemento del arreglo cumple con una condición.
@@ -78,7 +78,7 @@ console.log(indicePrimerColorRojo);
 
 // Array.prototype.includes(): Este método devuelve un booleano que indica si un elemento está presente en el arreglo.
 console.log("Array.prototype.includes()");
-const incluyeColorRojo = colores.includes("rojo") 
+const incluyeColorRojo = colores.includes("rojo")
 console.log(incluyeColorRojo);
 
 // Array.prototype.indexOf(): Este método devuelve el índice de un elemento en el arreglo.
@@ -93,7 +93,7 @@ console.log(ultimoIndiceColorRojo);
 
 // Array.prototype.join(): Este método devuelve una cadena que contiene los elementos del arreglo separados por un separador.
 console.log("Array.prototype.join()");
-const coloresSeparadosPorComa = colores.join(", ") 
+const coloresSeparadosPorComa = colores.join(", ")
 console.log(coloresSeparadosPorComa);
 
 // Array.prototype.slice(): Este método devuelve una parte del arreglo.
@@ -123,7 +123,7 @@ console.log(ultimoColor);
 console.log("Array.prototype.shift()");
 const primerColor = colores.shift() // Elimina el primer elemento del arreglo
 console.log(colores);
-console.log(primerColor);   
+console.log(primerColor);
 
 // Array.prototype.unshift(): Este método agrega uno o más elementos al principio de un arreglo y devuelve la nueva longitud del arreglo.
 console.log("Array.prototype.unshift()");
@@ -147,7 +147,26 @@ const coloresYFrutas = colores.concat(["manzana", "pera", "uva"])
 console.log(coloresYFrutas);
 
 
+// ejemplo de como se podria recrear la funcion map
+// arreglo: el arreglo que se va a iterar; callback: la función que se va a aplicar a cada elemento del arreglo
+function map(arreglo, callback) {
+    const resultados = [];
+    // i: el índice del elemento actual en el arreglo; arreglo: el arreglo completo
+    for (let i = 0; i < arreglo.length; i++) {
+        resultados.push(callback(arreglo[i], i, arreglo));
+    }
+    return resultados;
+}
+/**
+La función map crea un arreglo vacío resultados y luego itera sobre el arreglo original utilizando un bucle for. En cada iteración, aplica la función callback al elemento actual y almacena el resultado en el arreglo resultados.
 
+Finalmente, la función map devuelve el arreglo resultados con los resultados de la función callback aplicada a cada elemento del arreglo original.
+*/
+// ejemplo
+const arreglo = [1, 2, 3, 4, 5];
+const resultados = map(arreglo, x => x * 2);
+console.log(arreglo); // [1, 2, 3, 4, 5]
+console.log(resultados); // [2, 4, 6, 8, 10]
 
 
 /*
