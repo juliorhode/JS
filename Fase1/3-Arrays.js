@@ -40,6 +40,8 @@ colores.forEach((color) => {
     console.log(color);
 })
 
+// Array.isArray(): Este método devuelve true si un valor es un arreglo. Si no es un arreglo, devuelve false.
+Array.isArray(colores); // Devuelve true si colores es un arreglo
 
 // Array.prototype.map(): Este método devuelve un nuevo arreglo con los resultados de aplicar una función a cada elemento del arreglo original.
 console.log("Array.prototype.map()");
