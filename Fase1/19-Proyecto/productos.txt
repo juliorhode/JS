@@ -1,0 +1,1 @@
+[{"nombre":"Manzana 1","descripcion":"Manzanas importadas","precio":7.99},{"nombre":"Manzana 2","descripcion":"Manzanas importadas","precio":5.99},{"nombre":"Peras 1","descripcion":"Peras importadas","precio":5.99}]
