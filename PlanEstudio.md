@@ -14,25 +14,38 @@ Estructuras de control y funciones
 [x] Condicionales (if, else, switch)
 [x] Bucles (for, while)
 [x] Funciones: Declaración clásica, arrow functions, scope ,clousure
+[x] Funciones declaradas
+[x] Funciones expresadas
+[x] Funciones anónimas
+[x] Funciones de flecha
+[x] Funciones asíncronas
+[x] Funciones de callback:
 Arrays y objetos
 [x] Métodos: .map(), .filter(), .reduce()
 [x] Spread operator, destructuring
 Clases
-[ ] Introducción a las clases en JavaScript
-[ ] Declaración de clases
-[ ] Uso de clases para crear objetos
-[ ] Herencia y polimorfismo en clases
+[x] Introducción a las clases en JavaScript
+[x] Declaración de clases
+[x] Uso de clases para crear objetos
+[x] Herencia y polimorfismo en clases
+[x] Métodos estáticos y propiedades estáticas 
+Documentación de código JSDoc
+[x] JSDoc y la documentación de software
+[x] Creación de documentación con JSDoc
+[x] Uso de tags y comentarios en JSDoc
+[x] Instalación y configuración de JSDoc en VSCode
+[x] Uso de extensiones de VSCode para crear documentación
 Callbacks básicos
-[ ] Qué son y cómo funcionan con setTimeout
+[x] Qué son y cómo funcionan con setTimeout
 Algoritmos básicos
-[ ] Ordenamiento: Bubble Sort (O(n²))
-[ ] Búsqueda: Búsqueda Lineal (O(n))
-[ ] Complejidad: Introducción a Big O (tiempo y espacio)
+[x] Ordenamiento: Bubble Sort (O(n²))
+[x] Búsqueda: Búsqueda Lineal (O(n))
+[x] Complejidad: Introducción a Big O (tiempo y espacio)
 Práctica que haremos juntos
-[ ] Ordenar un array con Bubble Sort y buscar con Búsqueda Lineal
-[ ] Configurar Git, crear un repositorio y subir tu primer código a GitHub
+[x] Ordenar un array con Bubble Sort y buscar con Búsqueda Lineal
+[x] Configurar Git, crear un repositorio y subir tu primer código a GitHub
 Proyecto guiado
-[ ] "Mini-tienda" (consola): Listar productos, ordenarlos, buscarlos, y guardar el progreso en GitHub
+[x] "Mini-tienda" (consola): Listar productos, ordenarlos, buscarlos, y guardar el progreso en GitHub
 Fase 2: JavaScript intermedio y algoritmos fundamentales
 DOM y eventos
 [ ] Seleccionar elementos (querySelector)
